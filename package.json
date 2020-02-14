@@ -1,0 +1,47 @@
+{
+  "name": "dasm",
+  "version": "1.0.0",
+  "description": "A disassembler",
+  "main": "index.js",
+  "scripts": {
+    "test": "xo --fix . && nyc jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/drazisil/dasm.git"
+  },
+  "author": "Drazisil",
+  "license": "GPL-3.0",
+  "bugs": {
+    "url": "https://github.com/drazisil/dasm/issues"
+  },
+  "homepage": "https://github.com/drazisil/dasm#readme",
+  "devDependencies": {
+    "jest": "^25.1.0",
+    "jest-junit": "^10.0.0",
+    "nyc": "^15.0.0",
+    "prettier": "^1.19.1",
+    "xo": "^0.26.0"
+  },
+  "xo": {
+    "prettier": true,
+    "envs": [
+      "es2020",
+      "node",
+      "jest"
+    ]
+  },
+  "nyc": {
+    "reporter": [
+      "cobertura",
+      "text"
+    ],
+    "all": true
+  },
+  "jest": {
+    "reporters": [
+      "default",
+      "jest-junit"
+    ]
+  }
+}
