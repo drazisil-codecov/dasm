@@ -11,10 +11,10 @@ jobs:
           name: Upload coverage
           command: 'bash <(curl -s https://codecov.io/bash)'
       - store_artifacts:
-        path: junit.xml
-        prefix: tests
-    - store_artifacts:
-        path: coverage
-        prefix: coverage
-    - store_test_results:
-        path: junit.xml
+          path: junit.xml
+          prefix: tests
+      - store_artifacts:
+          path: coverage
+          prefix: coverage
+      - store_test_results:
+         path: junit.xml
