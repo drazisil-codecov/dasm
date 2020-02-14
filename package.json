@@ -4,7 +4,8 @@
   "description": "A disassembler",
   "main": "index.js",
   "scripts": {
-    "test": "xo --fix . && jest"
+    "test": "xo --fix . && jest",
+    "docs": "jsdoc src/index.js"
   },
   "repository": {
     "type": "git",

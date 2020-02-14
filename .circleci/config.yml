@@ -7,6 +7,7 @@ jobs:
       - checkout
       - run: npm install
       - run: npm test
+      - run: npm run docs
       - run:
           name: Upload coverage
           command: 'bash <(curl -s https://codecov.io/bash)'
@@ -16,5 +17,8 @@ jobs:
       - store_artifacts:
           path: coverage
           prefix: coverage
+      - store_artifacts:
+          path: docs
+          prefix: out
       - store_test_results:
          path: junit.xml

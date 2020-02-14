@@ -1,3 +1,7 @@
+/**
+ * Hello
+ * @returns string
+ */
 function hello() {
 	return 'hello';
 }
