@@ -6,7 +6,7 @@ jobs:
     steps:
       - checkout
       - run: npm install
-      - run: npm test
+      - run: npm run test:ci
       - run:
           name: Upload coverage
           command: 'bash <(curl -s https://codecov.io/bash)'

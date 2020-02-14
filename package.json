@@ -4,7 +4,8 @@
   "description": "A disassembler",
   "main": "index.js",
   "scripts": {
-    "test": "xo --fix . && nyc jest"
+    "test": "xo --fix . && nyc jest",
+    "test:ci": "nyc jest --ci"
   },
   "repository": {
     "type": "git",
@@ -19,6 +20,7 @@
   "devDependencies": {
     "jest": "^25.1.0",
     "jest-junit": "^10.0.0",
+    "jsdoc": "^3.6.3",
     "nyc": "^15.0.0",
     "prettier": "^1.19.1",
     "xo": "^0.26.0"
