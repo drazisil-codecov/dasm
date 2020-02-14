@@ -4,8 +4,7 @@
   "description": "A disassembler",
   "main": "index.js",
   "scripts": {
-    "test": "xo --fix . && nyc jest",
-    "test:ci": "nyc jest --ci"
+    "test": "xo --fix . && jest"
   },
   "repository": {
     "type": "git",
@@ -21,7 +20,6 @@
     "jest": "^25.1.0",
     "jest-junit": "^10.0.0",
     "jsdoc": "^3.6.3",
-    "nyc": "^15.0.0",
     "prettier": "^1.19.1",
     "xo": "^0.26.0"
   },
@@ -33,14 +31,17 @@
       "jest"
     ]
   },
-  "nyc": {
-    "reporter": [
-      "cobertura",
-      "text"
-    ],
-    "all": true
-  },
   "jest": {
+    "collectCoverage": true,
+    "collectCoverageFrom": [
+      "**/*.{js,jsx}",
+      "!**/node_modules/**",
+      "!**/vendor/**"
+    ],
+    "coverageReporters": [
+      "text",
+      "cobertura"
+    ],
     "reporters": [
       "default",
       "jest-junit"
