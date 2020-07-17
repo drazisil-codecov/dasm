@@ -19,7 +19,7 @@
   "homepage": "https://github.com/drazisil/dasm#readme",
   "devDependencies": {
     "jest": "^26.1.0",
-    "jest-junit": "^10.0.0",
+    "jest-junit": "^11.0.1",
     "jsdoc": "^3.6.4",
     "prettier": "^1.19.1",
     "xo": "^0.32.1"
