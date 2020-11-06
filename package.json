@@ -2,7 +2,7 @@
   "name": "dasm",
   "version": "1.0.0",
   "description": "A disassembler",
-  "main": "index.js",
+  "bin": "bin/dasm.js",
   "scripts": {
     "test": "xo --fix . && jest",
     "docs": "jsdoc src/index.js"
@@ -17,12 +17,15 @@
     "url": "https://github.com/drazisil/dasm/issues"
   },
   "homepage": "https://github.com/drazisil/dasm#readme",
+  "dependencies": {
+    "yargs": "16.1.0"
+  },
   "devDependencies": {
-    "jest": "^26.6.3",
-    "jest-junit": "^12.0.0",
-    "jsdoc": "^3.6.6",
-    "prettier": "^2.1.2",
-    "xo": "^0.34.2"
+    "jest": "26.6.3",
+    "jest-junit": "12.0.0",
+    "jsdoc": "3.6.6",
+    "prettier": "2.1.2",
+    "xo": "0.34.2"
   },
   "xo": {
     "prettier": true,
