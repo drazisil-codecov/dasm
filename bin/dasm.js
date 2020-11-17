@@ -2,7 +2,6 @@
 
 const dasm = require('../src');
 
-// eslint-disable-line no-unused-vars
 const _ = require('yargs')
 	.scriptName('dasm')
 	.command(
