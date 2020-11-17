@@ -2,7 +2,7 @@
 
 const dasm = require('../src');
 
-const yargs = require('yargs')
+const yargs = require('yargs');
 yargs()
 	.scriptName('dasm')
 	.command(
