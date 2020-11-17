@@ -1,9 +1,7 @@
 #!/usr/bin/env node
 
 const dasm = require('../src');
-
-const yargs = require('yargs');
-yargs()
+return require('yargs')
 	.scriptName('dasm')
 	.command(
 		'$0',
