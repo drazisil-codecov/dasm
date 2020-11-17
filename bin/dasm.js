@@ -1,9 +1,7 @@
 #!/usr/bin/env node
 
 const dasm = require('../src');
-
-// eslint-disable-line no-unused-vars
-const _ = require('yargs')
+process.exit(require('yargs')
 	.scriptName('dasm')
 	.command(
 		'$0',
@@ -13,4 +11,4 @@ const _ = require('yargs')
 			console.log(dasm.hello(argv));
 		}
 	)
-	.help().argv;``
+	.help().argv);
