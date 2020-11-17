@@ -2,7 +2,8 @@
 
 const dasm = require('../src');
 
-require('yargs')
+const yargs = require('yargs')
+yargs()
 	.scriptName('dasm')
 	.command(
 		'$0',
@@ -12,4 +13,4 @@ require('yargs')
 			console.log(dasm.hello(argv));
 		}
 	)
-	.help().argv;``
+	.help().argv;
